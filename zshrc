@@ -29,7 +29,7 @@ antigen bundle robbyrussell/oh-my-zsh lib
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle kennethreitz/autoenv
 
-antigen theme pure
+#antigen theme pure
 
 antigen apply
 
