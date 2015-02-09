@@ -1,5 +1,3 @@
-source ~/.common_profile
-
 # Add custom completion directory to fpath
 fpath=("${fpath[@]}"  /Users/jwshephe/.zsh-completions )
 autoload -U compinit && compinit
@@ -17,9 +15,6 @@ alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt # must happen before `source`ing oh-m
 source ~/.antigen/antigen/antigen.zsh
 
 antigen bundle robbyrussell/oh-my-zsh plugins/git
-antigen bundle robbyrussell/oh-my-zsh plugins/osx
-antigen bundle robbyrussell/oh-my-zsh plugins/copyfile
-antigen bundle robbyrussell/oh-my-zsh plugins/copydir
 antigen bundle robbyrussell/oh-my-zsh plugins/gnu-utils
 antigen bundle robbyrussell/oh-my-zsh plugins/brew
 antigen bundle robbyrussell/oh-my-zsh plugins/brew-cask
@@ -29,6 +24,7 @@ antigen bundle robbyrussell/oh-my-zsh plugins/tmux
 antigen bundle robbyrussell/oh-my-zsh plugins/tmuxinator
 antigen bundle robbyrussell/oh-my-zsh plugins/cabal
 antigen bundle robbyrussell/oh-my-zsh plugins/fasd
+antigen bundle robbyrussell/oh-my-zsh lib
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle kennethreitz/autoenv
@@ -99,4 +95,5 @@ alias pure-no-git="PURE_GIT_UNTRACKED_DIRTY=0"
 
 # added by travis gem
 [ -f /Users/jwshephe/.travis/travis.sh ] && source /Users/jwshephe/.travis/travis.sh
+source ~/.common_profile
 
