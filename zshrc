@@ -39,8 +39,6 @@ antigen apply
 
 ####################
 
-
-
 # Terpsta aliases
 alias zp="$EDITOR ~/.zshrc"
 ## reload your config
@@ -101,3 +99,4 @@ alias pure-no-git="PURE_GIT_UNTRACKED_DIRTY=0"
 
 # added by travis gem
 [ -f /Users/jwshephe/.travis/travis.sh ] && source /Users/jwshephe/.travis/travis.sh
+
